@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofideep - Centraliza tus proveedores y ahorra tiempo</title>
+    <style>
+        body { font-family: 'Inter', sans-serif, system-ui; line-height: 1.5; color: #1a202c; margin: 0; padding: 0; background: #fff; }
+        header { background: #fff; border-bottom: 1px solid #edf2f7; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; }
+        .hero { padding: 5rem 2rem; text-align: center; background: #fff; }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; color: #1a202c; max-width: 900px; margin: 0 auto 1.5rem; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; color: #4a5568; max-width: 750px; margin: 0 auto 2.5rem; }
+        .btn { background: #2563eb; color: #fff; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; font-weight: 700; font-size: 1.125rem; display: inline-block; transition: all 0.2s; }
+        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .problem-section { background: #f7fafc; padding: 4rem 2rem; border-top: 1px solid #edf2f7; border-bottom: 1px solid #edf2f7; }
+        .problem-container { max-width: 800px; margin: 0 auto; }
+        .problem-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .problem-item { background: #fff; padding: 1.25rem; border-radius: 0.75rem; border: 1px solid #edf2f7; font-weight: 600; display: flex; align-items: center; gap: 0.75rem; }
+        .problem-item:before { content: "⚠️"; }
+        .problem-highlight { background: #ebf8ff; color: #2a4365; padding: 1.5rem; border-radius: 1rem; text-align: center; font-weight: 700; border: 1px solid #bee3f8; }
+        .benefits { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; text-align: center; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .benefit-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #2d3748; }
+        .benefit-card p { font-size: 0.95rem; color: #718096; }
+        .form-section { background: #1e3a8a; color: #fff; padding: 5rem 2rem; }
+        .form-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem; align-items: start; }
+        .form-container { background: #fff; color: #1a202c; padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .input-group { margin-bottom: 1.25rem; }
+        label { display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: #718096; margin-bottom: 0.5rem; }
+        input, select, textarea { width: 100%; padding: 0.75rem; border: 1px solid #e2e8f0; border-radius: 0.5rem; font-size: 1rem; box-sizing: border-box; }
+        .checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 1rem; }
+        .checkbox-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; }
+        .checkbox-item input { width: auto; }
+        .footer { background: #1a202c; color: #a0aec0; padding: 3rem 2rem; text-align: center; border-top: 1px solid #2d3748; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight:900; font-size:1.5rem; color:#1e3a8a; font-style: italic;">OFIDEEP</div>
+        <div style="font-size: 0.9rem; font-weight: 600;">[TU_TELEFONO] | [TU_EMAIL]</div>
+    </header>
+
+    <section class="hero">
+        <h1>Deja de perder tiempo gestionando pedidos a varios proveedores</h1>
+        <p>Con Ofideep centralizas papelería, informática, impresos y consumibles en un solo proveedor. Puedes pedir por teléfono, email o web.</p>
+        <a href="#contacto" class="btn">Indica qué necesitas en tu empresa</a>
+    </section>
+
+    <section class="problem-section" id="problema">
+        <div class="problem-container">
+            <h2 style="text-align:center; font-size: 2rem;">¿Te pasa esto en tu oficina?</h2>
+            <div class="problem-list">
+                <div class="problem-item">Te das cuenta tarde de que no queda papel</div>
+                <div class="problem-item">El tóner se acaba cuando más se necesita</div>
+                <div class="problem-item">Tienes varios proveedores y varias facturas</div>
+                <div class="problem-item">Tienes que hacer pedidos urgentes</div>
+                <div class="problem-item">Siempre falta algo</div>
+            </div>
+            <div class="problem-highlight">
+                Si te ocurre alguna de estas situaciones, podemos ayudarte.
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+        <h2 style="font-size: 2rem;">Soluciones operativas para tu día a día</h2>
+        <div class="benefits-grid">
+            
+                <div class="benefit-card">
+                    <h3>Un solo proveedor</h3>
+                    <p>Centralizamos todas tus necesidades para que no pierdas tiempo comparando.</p>
+                </div>
+            
+                <div class="benefit-card">
+                    <h3>Un solo contacto</h3>
+                    <p>Habla siempre con la misma persona que conoce tu histórico.</p>
+                </div>
+            
+                <div class="benefit-card">
+                    <h3>Una sola factura</h3>
+                    <p>Recibe una factura única al mes para simplificar tu contabilidad.</p>
+                </div>
+            
+                <div class="benefit-card">
+                    <h3>Avisos de stock</h3>
+                    <p>Te avisamos cuando sabemos que te va a faltar el material habitual.</p>
+                </div>
+            
+                <div class="benefit-card">
+                    <h3>Pedidos por email</h3>
+                    <p>Puedes pedir simplemente respondiendo a cualquiera de nuestros emails.</p>
+                </div>
+            
+                <div class="benefit-card">
+                    <h3>Pago adaptado</h3>
+                    <p>Nos adaptamos a tu forma de pago habitual sin trámites pesados.</p>
+                </div>
+            
+        </div>
+    </section>
+
+    <section class="form-section" id="contacto">
+        <div class="form-grid">
+            <div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Indícanos qué utilizas y te enviamos lo necesario para tu próximo pedido</h2>
+                <p style="font-size: 1.125rem; opacity: 0.9; line-height: 1.7;">Dinos qué compras ahora y a quién, y te enviamos una comparativa de ahorro directa sin compromiso.</p>
+                <div style="margin-top: 2.5rem;">
+                    <p><strong>Teléfono:</strong> [TU_TELEFONO]</p>
+                    <p><strong>Email:</strong> [TU_EMAIL]</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="https://formsubmit.co/[TU_EMAIL]" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva solicitud de propuesta Ofideep">
+                    <input type="hidden" name="_next" value="https://[TU_DOMINIO]/gracias.html">
+                    
+                    <div class="input-group">
+                        <label>Empresa (Obligatorio)</label>
+                        <input type="text" name="empresa" required placeholder="Nombre de la empresa">
+                    </div>
+                    <div class="input-group">
+                        <label>Persona de contacto (Obligatorio)</label>
+                        <input type="text" name="contacto" required placeholder="Tu nombre">
+                    </div>
+                    <div class="input-group">
+                        <label>Email Corporativo (Obligatorio)</label>
+                        <input type="email" name="email" required placeholder="email@empresa.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Teléfono / Provincia</label>
+                        <div style="display:flex; gap:1rem;">
+                            <input type="tel" name="telefono" placeholder="Teléfono" style="flex:1;">
+                            <input type="text" name="provincia" placeholder="Provincia" style="flex:1;">
+                        </div>
+                    </div>
+                    <label>Intereses</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item"><input type="checkbox" name="interes" value="Papelería"> Papelería</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Informática"> Informática</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Imprenta"> Imprenta</div><div class="checkbox-item"><input type="checkbox" name="interes" value="LED"> LED</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Mobiliario"> Mobiliario</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Regalos de empresa"> Regalos de empresa</div>
+                    </div>
+                    <div class="input-group">
+                        <label>Frecuencia de compra</label>
+                        <select name="frecuencia">
+                            <option value="mensual">Mensual</option>
+                            <option value="trimestral">Trimestral</option>
+                            <option value="puntual">Puntual</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>¿Qué compras ahora y a quién?</label>
+                        <textarea name="compras_actuales" rows="2" placeholder="Ej: Tóner a tienda local..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label>¿Qué necesitas ahora mismo?</label>
+                        <textarea name="necesidad_urgente" rows="2" placeholder="¿Algún pedido urgente hoy?"></textarea>
+                    </div>
+                    <div style="font-size: 0.75rem; margin-bottom: 1.5rem; color: #718096;">
+                        <input type="checkbox" required name="rgpd"> Acepto que Ofideep me contacte para responder a mi solicitud.
+                    </div>
+                    <button type="submit" class="btn" style="width:100%; border: none; cursor: pointer;">ENVIAR Y RECIBIR PROPUESTA</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ofideep. Servicio integral para empresas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
