@@ -117,6 +117,8 @@
                     <input type="hidden" name="_next" value="https://copybras.github.io/prueba-app-ofideep/gracias.html">
                     <input type="hidden" name="_subject" value="LEAD OFIDEEP - Nuevo contacto desde la landing">
                     <input type="hidden" name="_cc" value="TU_OTRO_EMAIL@DOMINIO.COM">
+                    <input type="hidden" name="_subject" value="LEAD OFIDEEP - Solicitud desde la landing">
+                    <input type="hidden" name="_replyto" value="%email%">
 
                     <div class="input-group">
                         <label>Empresa (Obligatorio)</label>
@@ -139,8 +141,14 @@
                     </div>
                     <label>Intereses</label>
                     <div class="checkbox-group">
-                        <div class="checkbox-item"><input type="checkbox" name="interes" value="Papelería"> Papelería</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Informática"> Informática</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Imprenta"> Imprenta</div><div class="checkbox-item"><input type="checkbox" name="interes" value="LED"> LED</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Mobiliario"> Mobiliario</div><div class="checkbox-item"><input type="checkbox" name="interes" value="Regalos de empresa"> Regalos de empresa</div>
-                    </div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]"
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="Papelería"> Papelería</div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="Informática"> Informática</div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="Imprenta"> Imprenta</div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="LED"> LED</div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="Mobiliario"> Mobiliario</div>
+                        <div class="checkbox-item"><input type="checkbox" name="intereses[]" value="Regalos de empresa"> Regalos de empresa</div>
+
                     <div class="input-group">
                         <label>Frecuencia de compra</label>
                         <select name="frecuencia">
@@ -172,6 +180,7 @@
 </body>
 
 </html>
+
 
 
 
